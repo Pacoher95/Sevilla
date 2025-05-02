@@ -77,9 +77,9 @@ if os.path.exists(csv_path):
         usuario_cluster = int(data.iloc[-1]['Cluster'])
 
         labels_map = {
-            0: "💪 Rendimiento: constancia y mejora física",
-            1: "🧘 Salud: equilibrio y hábitos",
-            2: "🪞 Estética: cuidado de la imagen y presencia"
+            0: "💪 Rendimiento",
+            1: "🧘 Salud",
+            2: "🪞 Estética",
         }
         descripcion = labels_map.get(usuario_cluster, "Grupo sin etiqueta")
         st.success(f"Has sido clasificado como: {descripcion}")
